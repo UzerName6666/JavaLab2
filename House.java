@@ -11,9 +11,6 @@ public class House {
         return "дом с " + this.floor + " этажами";
     }
 
-    public House() {
-        this.floor = 0;
-    }
     public House(int floors){
         if(floors < 0){
             this.floor = 0;
