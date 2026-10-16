@@ -1,5 +1,5 @@
 public class House {
-    private int floor;
+    final private int floor;
 
     public String toString(){
         if(floor == 0){
@@ -17,6 +17,7 @@ public class House {
     public House(int floors){
         if(floors < 0){
             this.floor = 0;
+            return;
         }
         this.floor = floors;
     }
