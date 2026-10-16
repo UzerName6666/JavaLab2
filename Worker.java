@@ -1,6 +1,6 @@
 public class Worker {
     String FullName;
-    Department department;
+    private Department department;
 
     public String toString(){
         String sout = this.FullName;
@@ -26,7 +26,7 @@ public class Worker {
         }
         if(this.department != null){
             if(this.department != null){
-                this.department.workers.remove(this);
+                this.department.removeWorker(this);
             }
             if(this.department.getLeader() == this){
                 this.department.setLeader(null);

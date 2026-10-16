@@ -1,5 +1,5 @@
 public class Gun {
-    int bullet;
+    private int bullet;
 
     public Gun() {
         this.bullet = 5;

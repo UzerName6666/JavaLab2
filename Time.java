@@ -1,5 +1,5 @@
 public class Time{
-    int time;
+    private int time;
 
     public void normalize(){
         while(time < 0){

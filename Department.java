@@ -3,8 +3,8 @@ import java.util.Vector;
 
 public class Department {
     String departmentName;
-    int leader = -1;
-    Vector<Worker> workers = new Vector<Worker>();
+    private int leader = -1;
+    private Vector<Worker> workers = new Vector<Worker>();
 
     public Department(String name) {
         this.departmentName = name;
@@ -24,6 +24,10 @@ public class Department {
     }
 
     public void setLeader(Worker newLeader){
+        if (newLeader == null){
+            this.leader = -1;
+            return;
+        }
         addWorker(newLeader);
         this.leader = workers.indexOf(newLeader);
     }

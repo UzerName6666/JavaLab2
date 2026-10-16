@@ -7,7 +7,7 @@ public class Main {
         int inputmenu;
         int inputmenuAdd;
         do { 
-            System.out.println("Выбурите задачу (0 для выхода):");
+            System.out.println("Выберите задачу (0 для выхода):");
             System.out.println("1 - Время");
             System.out.println("2 - Домик");
             System.out.println("3 - Сотрудники");
