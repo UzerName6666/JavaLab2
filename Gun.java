@@ -12,7 +12,7 @@ public class Gun {
         this.bullet = bullet;
     }
 
-    public String Fire(){
+    public String fire(){
         if(this.bullet > 0){
             this.bullet--;
             return "Бах!";

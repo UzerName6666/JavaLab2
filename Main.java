@@ -202,7 +202,7 @@ public class Main {
                                         work3 = iout.inputInt();
                                     } while(work3 < 0 || work3 > workers.size() - 1);
 
-                                    System.out.println(workers.elementAt(work3));
+                                    System.out.println(workers.elementAt(work3).toString());
                                     break;
                                 case 6:
                                     if(departments.isEmpty()){
@@ -214,7 +214,7 @@ public class Main {
                                         System.out.print("Введите номер отдела [0, " + (departments.size() - 1) + "]: ");   
                                         dep3 = iout.inputInt();
                                     } while(dep3 < 0 || dep3 > 6);
-                                    System.out.println(departments.elementAt(dep3));
+                                    System.out.println(departments.elementAt(dep3).toString());
                                     break;
                             }
 
@@ -239,7 +239,7 @@ public class Main {
                     }
                     Gun pistol = new Gun(bullet);
                     for(int i = 0; i < repeat; i++){
-                        System.out.println(pistol.Fire());
+                        System.out.println(pistol.fire());
                     }
                     break;  
                 default:
